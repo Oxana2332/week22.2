@@ -1,0 +1,24 @@
+{
+  "name": "week22.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "search.js",
+  "scripts": {
+    "watch": "parcel index.html --open --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oxana2332/week22.1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Oxana2332/week22.1/issues"
+  },
+  "homepage": "https://github.com/Oxana2332/week22.1#readme",
+  "dependencies": {
+    "apexcharts": "^3.36.0",
+    "chart.js": "^3.9.1",
+    "moment": "^2.29.4"
+  }
+}

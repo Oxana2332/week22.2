@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo"><img class="logo_img" src="./assets/logo.jpg" alt="logo">
+            <p class="logo_text">Collab.io</p>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav_link__select"><img class="nav_link_img" src="./assets/dashboard-icon.svg"
+                    alt="Dashboard">Dashboard</a>
+            <a href="#" class="nav_link"><img class="nav_link_img" src="./assets/backlog-icon.svg"
+                    alt="Backlog">Backlog</a>
+            <a href="#" class="nav_link"><img class="nav_link_img" src="./assets/activeSprint-icon.svg"
+                    alt="Active Sprint">Active Sprint</a>
+            <a href="#" class="nav_link"><img class="nav_link_img" src="./assets/reports-icon.svg"
+                    alt="Reports">Reports</a>
+            <a href="#" class="nav_link"><img class="nav_link_img" src="./assets/pages-icon.svg" alt="Pages">Pages</a>
+            <a href="#" class="nav_link"><img class="nav_link_img" src="./assets/setting-icon.svg"
+                    alt="Setting">Setting</a>
+        </nav>
+        <button class="button">Add <br> New Task
+            <img class="button_img" src="./assets/addButton-icon.svg" alt="add-button">
+        </button>
+    </header>
+
+    <main id="main">
+
+        <section class="main_date">
+            <h2 class="main_date__title">Dashboard</h2>
+            <div id="main_date__module"></div>
+            <div class="main_date__countainer">
+                <img class="main_date__img" src="./assets/calendar-icon.svg" alt="month">
+                <select class="main_date__text" name="month" id="month">
+                    <option value="1011">Oct - Nov 2022</option>
+                    <option value="1201">Dec - Jan 2023</option>
+                    <option value="0203">Feb - Mar 2023</option>
+                    <option value="0405">Apr - May 2023</option>
+                    <option value="0607">June - July 2023</option>
+                    <option value="0809">Aug - Sept 2023</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="main_banner">
+            <div>
+                <h1 class="main_banner__title">Welcome <br> Oxana Rozhkova</h1>
+                <p class="main_banner__text">You have 2 project to finish and already completed 68%
+                    from your monthly level. Keep going to your goal.</p>
+                <button class="main_banner__button">More &#8250;</button>
+            </div>
+            <img class="main_banner__img" src="./assets/partMain.png" alt="mainBanner">
+        </section>
+
+        <div class="main_chart__first">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <section class="main_section">
+
+            <article class="main_article">
+                <h2 class="main_article__title">Task</h2>
+                <p class="main_article__text">10 min on this week</p>
+                
+                <div class="main_article__chart" id="chart">
+
+                </div>
+            </article>
+
+            <article class="main_article__second">
+                <h2 class="main_article__title">Task List</h2>
+                <p class="main_article__text">today month, day</p>
+
+                <div class="task">
+                    <img class="task_img" src="./assets/revamp-icon.svg" alt="revamp">
+                    <div>
+                        <h3 class="task_title">Dashboard Revamp</h3>
+                        <p class="task_text">10:00 &middot; Hope Project</p>
+                    </div>
+                </div>
+
+
+                <div class="task">
+                    <img class="task_img" src="./assets/marketplace-icon.svg" alt="marketplace">
+                    <div>
+                        <h3 class="task_title">Marketplace Design</h3>
+                        <p class="task_text">09:00 &middot; Dream Project</p>
+                    </div>
+                </div>
+
+                <div class="task">
+                    <img class="task_img" src="./assets/portfolio-icon.svg" alt="portfolio">
+                    <div>
+                        <h3 class="task_title">Portfolio Design</h3>
+                        <p class="task_text">08:00 &middot; Core Project</p>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <aside id="aside">
+        <h2 class="aside_title">Profile</h2>
+        <p class="aside_text">80% Completed your profile.</p>
+
+        <figure class="aside_figure">
+            <img class="aside_figure__img" src="./assets/avatar.png" alt="avatar">
+            <p class="aside_figure__title">Oxana Rozhkova</p>
+            <figcaption class="aside_figure__text">UI/UX Designer</figcaption>
+        </figure>
+
+        <div class="aside_current">
+            <p class="aside_current__title">Current Project</p>
+            <a href="#" class="aside_current__link">View All</a>
+        </div>
+
+
+        <h2 class="aside_title">Comment</h2>
+        <p class="aside_text">You have 6 comment on project</p>
+
+        <a href="#" class="aside_link">
+            <img class="aside_link__img" src="./assets/letter-icon.svg" alt="mail">
+            <div class="aside_link__container">
+                <h3 class="aside_link__title">Oluchi Mazi</h3>
+                <p class="aside_link__text">I'm getting a late today</p>
+            </div>
+            <img src="./assets/arrowRight-icon.svg" alt="arrow">
+        </a>
+        <a href="#" class="aside_link">
+            <img class="aside_link__img" src="./assets/letter-icon.svg" alt="mail">
+            <div class="aside_link__container">
+                <h3 class="aside_link__title">Shinohara Ryoma</h3>
+                <p class="aside_link__text">What are the homework...</p>
+            </div>
+            <img src="./assets/arrowRight-icon.svg" alt="arrow">
+        </a>
+        <a href="#" class="aside_link">
+            <img class="aside_link__img" src="./assets/letter-icon.svg" alt="mail">
+            <div class="aside_link__container">
+                <h3 class="aside_link__title">Paromita Haque</h3>
+                <p class="aside_link__text">I'm getting a late today</p>
+            </div>
+            <img src="./assets/arrowRight-icon.svg" alt="arrow">
+        </a>
+        <a href="#" class="aside_link">
+            <img class="aside_link__img" src="./assets/letter-icon.svg" alt="mail">
+            <div class="aside_link__container">
+                <h3 class="aside_link__title">Cat Scientist </h3>
+                <p class="aside_link__text">What are the homework...</p>
+            </div>
+            <img src="./assets/arrowRight-icon.svg" alt="arrow">
+        </a>
+        <a href="#" class="aside_link">
+            <img class="aside_link__img" src="./assets/letter-icon.svg" alt="mail">
+            <div class="aside_link__container">
+                <h3 class="aside_link__title">Alisa Tsvetkova</h3>
+                <p class="aside_link__text">I'm getting a late today</p>
+            </div>
+            <img src="./assets/arrowRight-icon.svg" alt="arrow">
+        </a>
+        <a href="#" class="aside_link">
+            <img class="aside_link__img" src="./assets/letter-icon.svg" alt="mail">
+            <div class="aside_link__container">
+                <h3 class="aside_link__title">Dina Bogomazova</h3>
+                <p class="aside_link__text">What are the homework...</p>
+            </div>
+            <img src="./assets/arrowRight-icon.svg" alt="arrow">
+        </a>
+    </aside>
+
+    <script type="module" src="./script/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</body>
+
+</html>
