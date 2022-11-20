@@ -1,6 +1,6 @@
-import moment from '../node_modules/moment';
 import ApexCharts from 'apexcharts'
 import Chart from 'chart.js/auto';
+import moment from 'moment';
 
 //moment
 export function getToday() {
